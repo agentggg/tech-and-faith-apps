@@ -70,8 +70,65 @@ footer {
     margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+/* RESPONSIVE DESIGN */
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+    section {
+        margin: 20px auto;
+        max-width: 900px;
+    }
+
     .app-image, .demo-video {
+        max-width: 800px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    section {
+        margin: 20px auto;
+        max-width: 700px;
+    }
+
+    .app-image, .demo-video {
+        max-width: 700px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .app-image, .demo-video {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .btn {
         width: 100%;
+        padding: 15px;
+        margin: 5px 0;
     }
 }
